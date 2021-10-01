@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Taller</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+        
+        <section id="price">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="block">
+                            <h1 class="heading wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">Restaurante <span>PUMAS</span>  <span>KINGS</span></h1>
+                            <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">Sean bienvenidos a nuestro restaurante</p>
+                            <div class="pricing-list">
+                                
+                                <!---->
+                                <form action="javascript:void(0);" class="demoForm" id="formulario">
+                                    <div class="title">
+                                        <h3>Combos <span>disponibles</span></h3>
+                                    </div>
+                                    <fieldset>
+                                        <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">Ingrese la cantidad de combos a llevar: </p>
+                                        <input type="number" class="form-control py-3" id="cantidad" placeholder="Cantidad" value="1">
+                              
+                                        <ul>
+                                    
+                                    <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="300ms">
+                                        <div class="item">
+                                            <div class="item-title">
+                                                <label><input type="radio" name="combo" value="7.25" checked="checked"/>Super Combo</label> 
+                                                <div class="border-bottom"></div>
+                                                <span>$ 7.25</span>
+                                            </div>
+                                            <p>3 piezas de pollo, ensalada, papas fritas y bebida grande</p>
+                                            
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                                        <div class="item">
+                                            <div class="item-title">
+                                                <label><input type="radio" name="combo" value="5.75" />Combo Personal</label>
+                                                <div class="border-bottom"></div>
+                                                <span>$ 5.75</span>
+                                            </div>
+                                            <p>2 piezas de pollo, papa frita y bebidad mediana</p>
+                                        </div>
+                                    </li>
+                                    <li class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms">
+                                        <div class="item">
+                                            <div class="item-title">
+                                                <label><input type="radio" name="combo" value="3.50" />Combo Infantil</label>
+                                    <div class="border-bottom"></div>
+                                                <span>$ 3.50</span>
+                                            </div>
+                                            <p>1 pieza de pollo, papa frita y bebida pequeña</p>
+                                        </div>
+                                    </li>
+                                    <input type="hidden" name="sz_tot" value="0.00" />
+
+                                </ul>
+                                <div class="title">
+                                    <h3>Productos a <span>agregar</span></h3>
+                                </div>
+                                    <p id="pollo_toppings"><label></label>
+                                        
+                                
+                                    <label><input type="checkbox"  value="1.50" />Ensalada</label><br>
+                                    <label><input type="checkbox"  value="1.25" />Papas Fritas</label><br>
+                                    <label><input type="checkbox"  value="1.75" />Pieza de pollo grande</label><br>
+                                    <label><input type="checkbox"  value="1.50" />Pieza de pollo mediano</label><br>
+                                    <label><input type="checkbox"  value="1.25" />Pieza de pollo pequeña</label><br>
+                                    <label><input type="checkbox"  value="1.50" />Bebida Grande</label><br>
+                                    <label><input type="checkbox"  value="1.25" />Bebida Mediana</label><br>
+                                    <label><input type="checkbox"  value="1.00" />Bebida Pequeña</label><br>
+                                    <label><input type="checkbox"  value="0.50" />Café</label><br>
+                                    <label><input type="checkbox"  value="1.25" />Postre</label><br>
+                                    <input type="hidden" name="tops_tot" value="0.00" />
+                                    </p>
+                                    <p>
+                                    <label>
+                                    Total: $<input type="text" name="total" class="num" value="0.00"
+                                    readonly="readonly" />
+                                    </label>
+                                    </p>
+                                    <p>
+                                    
+                                        <input type="submit" onclick="recibo();" class="btn btn-default pull-right wow bounceIn"  role="button" value="ENVIAR"  />
+                                    
+                                    </p>
+                                    </fieldset>
+                                    </form>
+                            
+                                <!---->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/pollo.js"></script>
+</body>
+</html>
